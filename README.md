@@ -64,3 +64,10 @@ $ forge --help
 $ anvil --help
 $ cast --help
 ```
+you can see all opcodes in here ths website 
+https://www.evm.codes/
+https://www.ethervm.io/
+
+in terminal you can try and test this 
+cast to-base 0x60 dec
+cast to-base 0x60 bin
