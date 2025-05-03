@@ -70,4 +70,21 @@ https://www.ethervm.io/
 
 in terminal you can try and test this 
 cast to-base 0x60 dec
-cast to-base 0x60 bin
+cast to-base 0x60 bin``
+after .huff v1 file after that run this code than you get 
+-huffc src/horse
+StoreV1/HorseStore.huff --bin-runtime
+5f3560e01c8063cdfead2e1461001b578063e026c01714610022575b6004355f55005b5f545f5260205ff3
+-you can paste this in evm.code/playground in bytecode than you get proper result
+-first PUSH4 code in down side than run than this work proper
+
+
+after adding in test need to install huff
+-forge install huff-language/foundry-huff --no-commit
+
+
+-forge test --match-path *Huff* --debug testReadValue -vvvv
+
+-Decompilers
+**Dedaub **https://app.dedaub.com/ethereum/address/0x6b175474e89094c44da98b954eedeac495271d0f/decompiled
+**Heimdall ** https://github.com/Jon-Becker/heimdall-rs
