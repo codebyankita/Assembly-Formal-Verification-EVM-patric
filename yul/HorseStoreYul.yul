@@ -32,7 +32,7 @@ object "HorseStoreYul" {
 
             /* ---------- calldata decoding functions ----------- */
             function selector() -> s {
-                s := div(calldataload(0), 0x100000000000000000000000000000000000000000000000000000000)
+                 s := div(calldataload(0), 0x100000000000000000000000000000000000000000000000000000000)
             }
 
             function decodeAsUint(offset) -> v {

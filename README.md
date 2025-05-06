@@ -88,3 +88,37 @@ after adding in test need to install huff
 -Decompilers
 **Dedaub **https://app.dedaub.com/ethereum/address/0x6b175474e89094c44da98b954eedeac495271d0f/decompiled
 **Heimdall ** https://github.com/Jon-Becker/heimdall-rs
+
+with this commands you know the solidity version 
+-this repo combine with both solidity, huff, and yul language 
+-huff is good yul is not that good for now 
+-after run this command you get binary
+solc --strict-assembly 
+ --optimize  --optimize-runs 2000 ./yul/HorseStoreYul.yul --bin
+
+======= yul/HorseStoreYul.yul (EVM) =======
+
+Binary representation:
+603680600a5f395ff3fe5f3560e01c8063cdfead2e1460245763e026c01714601b575f80fd5b5f545f5260205ff35b602436106032576004355f55005b5f80fd
+
+solc --strict-assembly  --optimize  --optimize-runs 2000 ./yul/HorseStoreYul.yul --bin | grep 60
+603680600a5f395ff3fe5f3560e01c8063cdfead2e1460245763e026c01714601b575f80fd5b5f545f5260205ff35b602436106032576004355f55005b5f80fd
+ 
+ -horsestorev2
+-forge install openzeppelin/openzeppelin-contracts@v5.0.1
+- forge test
+
+
+-from this repo
+https://github.com/huff-language/huffmate
+forge install huff-language/huffmate --no-commit
+
+-with the use of this you can get hex value of days
+ankitakapadiya@Ankitas-MacBook-Pro 1-horse-store % chisel
+Welcome to Chisel! Type `!help` to show available commands.
+➜ 1 days
+Type: uint256
+├ Hex: 0x15180
+├ Hex (full word): 0x0000000000000000000000000000000000000000000000000000000000015180
+└ Decimal: 86400
+➜ 
